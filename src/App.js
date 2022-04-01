@@ -2,6 +2,12 @@ import logo from './logo.svg';
 import './App.css';
 import { useEffect, useState } from 'react';
 
+
+
+//const API = 'http://localhost:4000/mobiles'
+
+const API = 'https://mobile-ecommerce-app.herokuapp.com'
+
 function App() {
   return (
     <div className="App">
@@ -14,7 +20,7 @@ function PhoneList(){
   const [ mobiles , setMobiles ] = useState([]);
 
   useEffect(() =>{
-    fetch('http://localhost:4000/mobiles')
+    fetch(`${API}/mobiles`)
    .then((data) => data.json())
    .then((mbs) => setMobiles(mbs));
   }, [])
