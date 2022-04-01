@@ -2,37 +2,42 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: whitesmoke;
+  font-family: Roboto;
+  margin: 16px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.phone-name {
+  padding: 16px;
+  font-size: 48px;
+  margin-bottom: 0px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.phone-company {
+  font-size: 32px;
+  color: grey;
+  margin-top: 0px;
+}
+
+.phone-picture {
+  height: 540px;
+  width: 750px;
+  object-fit: contain;
+}
+
+.phone-container {
+  background-color: white;
+  width: 750px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: rgb(0 0 0 / 24%) 1px 2px 13px;
+}
+
+.phone-list-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  gap: 24px;
+  margin: 24px;
 }
