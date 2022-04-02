@@ -41,3 +41,8 @@ body {
   gap: 24px;
   margin: 24px;
 }
+
+.phone-add-cart {
+  font-size: 24px;
+  margin-bottom: 24px;
+}

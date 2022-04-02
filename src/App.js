@@ -4,9 +4,11 @@ import { useEffect, useState } from 'react';
 
 
 
-//const API = 'http://localhost:4000/mobiles'
+//const API = 'http://localhost:4000'
 
 const API = 'https://mobile-ecommerce-app.herokuapp.com'
+
+//const cartCtx = createContext();
 
 function App() {
   return (
@@ -39,6 +41,7 @@ function Phone({ mobile }){
     <img src={mobile.img} alt={mobile.model} className='phone-picture'/>
     <h2 className='phone-name'>{mobile.model}</h2>
     <p className='phone-company'>{mobile.company}</p>
+    <button className='phone-add-cart'>Add to Cart</button>
   </div>
 )}
 
