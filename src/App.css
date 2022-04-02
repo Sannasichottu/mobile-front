@@ -46,3 +46,33 @@ body {
   font-size: 24px;
   margin-bottom: 24px;
 }
+
+.cart-item-container {
+  display: flex;
+  background-color: white;
+  text-align: left;
+  width: 100%;
+  border-radius: 12px;
+}
+
+.cart-item-picture {
+  height: 240px;
+  width: 350px;
+  object-fit: contain;
+}
+
+.cart-item-company {
+  color: grey;
+  margin-top: 0px;
+}
+
+.cart-item-quantity > span {
+  color: grey;
+  font-size: 14px;
+}
+
+.cart-checkout {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
