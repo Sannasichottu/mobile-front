@@ -34,15 +34,6 @@ function App() {
     //    ----- post -> setCart -----
     const entireCart = []; //TODO
     //mobile / mobile.id
-    if(action === 'add'){
-      const updateItem = cart.find(item => item._id === mobile._id)
-      if(updateItem){
-        //get Index & update
-      } else{
-        setCart([...cart, {...mobile, qty:1}])
-      }
-    }
-
     //vs
     //updateOne ... options {upsert: true} 
 
